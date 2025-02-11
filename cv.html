@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="images/IMG20240715145953~3.jpg" alt="Irith Chaturvedi">
+        <h2>Irith Chaturvedi</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/irithchaturvedi" target="_blank">
+                    <img src="images/github-icon.png" alt="GitHub"> GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://orcid.org/0009-0001-5160-3464" target="_blank">
+                    <img src="images/orcid-id.png" alt="ORCID"> ORCID
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/irith_12/" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram"> Instagram
+                </a>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <h1>Irith Chaturvedi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="transcript.html">Transcript</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Curriculum Vitae</h2>
+        <section>
+            <h3>
+                Work Experience
+                <h4>
+                    Undergraduate Researcher
+                </h4>
+                <section>
+                    Biodiversity Genomics Lab at the University of Illinois
+
+                    Location: Champaign, IL, USA
+                    Aug 2023 - Present
+
+                    In the field of computational genomics, I have designed, managed and optimized Targeted Assembly Pipelines for the Cyprinidae and Danionidae family of fish. I am also working on a publication on improving alignment accuracy with the use of statistical analysis in R and a novel weighted scoring method to handle evidences of gene duplication and hybridization.
+                    
+                    Project 1: Reconstructing Evolution and the Tree of Life in Fishes
+                    The aim of the project was to identify the genes that were targeted for sequencing in a previous experiment on the evolution of Cypriniformes - the largest group of freshwater fishes in the world. Starting with the creation of a reference set of genomic inforation for the Zebrafish (Danio Rerio) and identifying over 700 unique gene features to be used as refernece sequences for targeted assemblies in 41 species of Cyprinids. Coverage and length analysis using Python's data science libraries was conducted to assess sequences suitable for reference set.
+
+                    Project 2: Targeted Assembly for Reference Sequences in Cyprinidae using the CAPTUS Pipeline
+                    Using the CAPTUS pipeline developed by Dr. Edgardo Mortiz (initially to assess plant genomic data) was modified to be used to conduct targetted assembly for a family of fish (Carps and Minnows). This also includes using workflow automation softwares like NEXTflow and functional scripts using python for improving space and time complexity of the pipeline.
+
+                    Understanding the evolutionary relationships between species and also between genes that have duplicated, because most pipelines don't handle it. Initially only single copy genes were considered by the Stout et. al research paper on “Resolving Cypriniformes relationships”, here we try to handle duplications using the existing data we already have. I used R and its libraries, identified important characteristics and features of Amino acid, Nucleotide and Clustering alignments to determine useful and unique loci within our results.
+                    For analyzing alignment results, IQ-Tree was used to comoprehend genealogy of the family. Parallelization of IQ-Tree processes was done using Python. I also used the APE (R) package for basic unrooted tree visualizations.
+                    Identifying unique hits for each query sequence using our Extraction results and confirming if sequences overlap within the same node and range. For this a novel weighted scoring method to match best references to their respective genomic regions was developed and implemented post the extraction step using computational scripts implementing multiple data structures, searching and sorting algorithms.
+                </section>
+                <h4>
+                    Course Assistant (STAT 420)
+                </h4>
+                <section>
+                    Department of Statistics, University of Illinois
+
+                    Location: Champaign, IL, USA
+                    Jan 2025 - Present
+
+                    Evaluated and graded weekly assignments and Midterm exams for over 100 students. Conducted weekly office hours to guide students through the material taught in the course and homework problems. I collaborate with the instructor, TA and fellow CAs in weekly meetings to discuss grading strategies, and course structure.
+                </section>
+                <h4>
+                    IT Intern
+                </h4>
+                <section>
+                    21st Century Dads Foundation
+
+                    Location: Chicago, IL, USA
+                    Jun 2023 - Aug 2023, May 2024 - Aug 2024
+
+                    As the IT intern for the foundation, I was tasked with handling database operations with AWS S3 services and MySQL, handling a database of over 2000 foundation members. Identifying 15 potential grantmakers using Python's Data Science libraries based on various metrics such as core values, mission, funding targets and amounts. Through these efforts I was able to raise $120,000 from a single grantmaker.
+                    
+                    I also developed promotional strategies via social media platforms to attract prospective members and strengthen recruitment efforts and helped raise $75,000 for the 21st Century Dads Foundation and the Illinois Fatherhood Initiative as a part of the “Dads Honor Ride” team at the Race Across America event.
+                </section>
+            </h3>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Irith Chaturvedi | Contact: <a href="mailto:irithc2@illinois.edu">irithc2@illinois.edu</a> | <a href="https://www.linkedin.com/in/irithchaturvedi" target="_blank">LinkedIn Profile</a></p>
+    </footer>
+</body>
+</html>
