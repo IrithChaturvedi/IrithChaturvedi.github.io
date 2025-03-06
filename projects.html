@@ -42,8 +42,133 @@
         </nav>
     </header>
     <main>
-        <h2>Projects: Under development</h2>
+    <h2>Projects</h2>
+        <h3>Analyzing the Real Estate Market in the US Northeast:</h3>
+            <h4>Motivation</h4>
+            <p>The Northeastern region of the USA includes Pennsylvania, Maine, New York, New Jersey, Massachusetts, Connecticut, Rhode Island, New Hampshire, and Vermont. Despite its historical and cultural significance, affordability remains a challenge for many residents.</p>
+            
+            <h4>Alternative Places in the U.S. Northeast</h4>
+            <ul>
+                <li><strong>Why Stay in the Northeast?</strong> This project highlights economic stability in the Northeast while identifying affordable alternatives.</li>
+                <li><strong>Focus on Affordability:</strong> Identifying cities that offer career opportunities without excessive costs.</li>
+                <li><strong>Avoiding Newly Saturated Cities:</strong> Instead of moving to popular Southern cities, this project suggests sister cities with strong career prospects.</li>
+                <li><strong>Strategic Move from New York:</strong> Providing data-driven insights to help individuals relocate to affordable cities without compromising economic growth.</li>
+            </ul>
+
+            <h3>Methods</h3>
+            <h4>Data Retrieval</h4>
+            <p>Four datasets were used for analysis:</p>
+            <ul>
+                <li>Per Capita Income per US State (<em>Kaggle</em>)</li>
+                <li>Updated House Prices of Northeastern US States (<em>Kaggle</em>)</li>
+                <li>Population Statistics of US States (<em>Data.gov</em>)</li>
+                <li>Pittsburgh Home Prices Dataset (<em>census.data.gov</em>)</li>
+            </ul>
+
+            <h4>Data Processing</h4>
+            <ul>
+                <li><strong>Data Cleaning:</strong> Removed null values, dropped unwanted columns.</li>
+                <li><strong>Data Sorting:</strong> Grouped data by state, filtered population data for 2010-2019 trends.</li>
+                <li><strong>Analysis & Visualization:</strong> Used <em>Python Pandas</em>, <em>Folium</em>, and <em>Matplotlib</em> to manipulate data and generate insights.</li>
+            </ul>
+
+            <h4>Machine Learning Model</h4>
+            <ul>
+                <li>Implemented a <strong>Logistic Regression</strong> model to predict the best Pittsburgh neighborhood based on budget, size of house, numer of bedrooms, proximity to school and other features.</li>
+                <li>Created a pipeline using <em>StandardScaler()</em> and <em>LogisticRegression()</em> to process and train the data.</li>
+                <li>Applied <em>GridSearchCV</em> with 5-fold cross-validation to optimize hyperparameters.</li>
+                <li>Achieved 95% accuracy in predicting the best US Northeast neighborhood to live in based on your requirements</li>
+                <li>Using Zillow's real estate API, ther results of the model and other features are used to report the 10 best properties that suit the users needs.</li>
+            </ul>
+
+            <h3>Results from Analysis</h3>
+            <h4>Population Trends & Cost of Living</h4>
+            <ul>
+                <li>Southern U.S. states have seen population growth due to lower costs.</li>
+                <li>Cities with a strong job market and moderate living costs are ideal for relocation.</li>
+                <li>Northeastern states, excluding New York, provide stable incomes relative to living expenses.</li>
+            </ul>
+
+            <h3>Recommended Cities</h3>
+            <h4>1. Pittsburgh, Pennsylvania</h4>
+            <ul>
+                <li><strong>Average House Price:</strong> $160K</li>
+                <li><strong>Diverse Population:</strong> 22% Black/African American, 5.5% Asian</li>
+                <li><strong>Average Salary:</strong> $64K</li>
+                <li><strong>Why Pittsburgh?</strong> Affordable alternative to NYC with economic stability.</li>
+            </ul>
+
+            <h4>2. Hartford, Connecticut</h4>
+            <ul>
+                <li><strong>Average House Price:</strong> $190K</li>
+                <li><strong>Diverse Population:</strong> 34% Black/African American, 20% Hispanic</li>
+                <li><strong>Why Hartford?</strong> Balance of affordability, diversity, and job opportunities.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>This study provides data-driven insights into affordable Northeast cities, helping individuals leaving NYC make informed relocation decisions. <strong>Pittsburgh and Hartford</strong> emerge as the top recommendations due to their affordability, strong job markets, and economic stability.</p>
+
+            <h3>References</h3>
+            <ul>
+                <li>City Limits (2023). More Than Half of Immigrant New Yorkers Can't Afford Basic Needs.</li>
+                <li>Kaggle. USA Real Estate Dataset & Per Capita Income Data.</li>
+                <li>U.S. Census Bureau. Population Estimates Program.</li>
+                <li>Data USA. Pittsburgh & Hartford Data.</li>
+                <li>Redfin. Shadyside Housing Market.</li>
+                <li>Data.gov. Property Data with Geographic Identifiers.</li>
+            </ul>
         
+        <h2>Stock Price Performance of Pharmaceutical Companies during COVID-19</h2>
+    
+            <div class="section">
+                <h3>Summary</h3>
+                <p>The COVID-19 pandemic significantly impacted global markets, particularly pharmaceutical companies involved in vaccine development. This project examines the correlation between U.S. COVID-19 case and death rates and the stock price movements of Pfizer (PFE), AstraZeneca (AZN), and Johnson & Johnson (JNJ) from 2020 to 2021. The study analyzes market responses to major pandemic events, such as vaccine approvals and peak infection periods.</p>
+            </div>
+            
+            <div class="section">
+                <h3>Research Question</h3>
+                <p>How did fluctuations in U.S. COVID-19 cases and death rates correlate with changes in the stock prices of major pharmaceutical companies during the pandemic?</p>
+            </div>
+            
+            <div class="section">
+                <h3>Data Sources</h3>
+                <ul>
+                    <li><strong>COVID-19 Data:</strong> Johns Hopkins University GitHub Repository (Daily case and death data for the U.S.)</li>
+                    <li><strong>Stock Price Data:</strong> Alpha Vantage API (Weekly adjusted closing prices for selected pharmaceutical stocks)</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Approach</h3>
+                <p>The project involved data integration, cleaning, and visualization using Python and Snakemake. Key COVID-19 dates were aligned with stock price movements to identify significant market trends.</p>
+            </div>
+            
+            <div class="section">
+                <h3>Findings</h3>
+                <h4>COVID-19 Trends</h4>
+                <ul>
+                    <li>Peak U.S. cases occurred on January 8, 2021, surpassing 300,000 in a single day.</li>
+                    <li>January 12, 2021, marked the highest recorded daily death toll, exceeding 4,400 deaths.</li>
+                    <li>States with high population densities (e.g., California, New York) had elevated incident rates.</li>
+                </ul>
+                
+                <h4>Stock Market Response</h4>
+                <ul>
+                    <li>Stock prices surged following vaccine approvals but exhibited volatility amid uncertainty.</li>
+                    <li>Pfizer and AstraZeneca saw stock declines post-vaccine release, possibly due to early skepticism.</li>
+                    <li>Johnson & Johnson, with a later vaccine rollout, maintained stronger stock performance into 2021.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h3>Future Work</h3>
+                <ul>
+                    <li>Expand the analysis to include Moderna and Novavax for a broader market assessment.</li>
+                    <li>Obtain daily stock price data for a more granular examination of market fluctuations.</li>
+                    <li>Explore global stock trends beyond the U.S. for a more comprehensive impact analysis.</li>
+                </ul>
+            </div>
+    <h2>More Projects coming soon!!!</h2>
     </main>
     <footer>
         <p>&copy; 2025 Irith Chaturvedi | Contact: <a href="mailto:irithc2@illinois.edu">irithc2@illinois.edu</a> | <a href="https://www.linkedin.com/in/irithchaturvedi" target="_blank">LinkedIn Profile</a></p>
