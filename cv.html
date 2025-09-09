@@ -44,59 +44,91 @@
     </header>
     <main>
         <h2>Curriculum Vitae</h2>
-        <section class="work-experience">
-            <h3>Work Experience</h3>
 
-            <!-- Undergraduate Researcher -->
+        <section class="introduction">
+            <p>
+                I am <strong>Irith Chaturvedi</strong>, a Senior at the University of Illinois Urbana-Champaign majoring in 
+                <strong>Data Science + Information Science</strong> with minors in <strong>Computer Science</strong> and <strong>Statistics</strong>. 
+                With a 4.0 GPA, I am a <em>James Scholar</em> and <em>Dean’s List recipient</em> every semester.
+            </p>
+            <p>
+                My experiences span <strong>research</strong>, <strong>industry</strong>, and <strong>non-profit work</strong>, with additional leadership and global engagement.
+            </p>
+        </section>
+
+        <section class="work-experience">
+            <h3>Experience</h3>
+
+            <!-- Research -->
             <div class="job">
                 <h4>Undergraduate Researcher</h4>
-                <p class="company">Biodiversity Genomics Lab, University of Illinois</p>
-                <p class="location-duration">Champaign, IL, USA | Aug 2023 - Present</p>
+                <p class="company">Biodiversity Genomics Lab, University of Illinois (Advisor: Dr. Milton Tan)</p>
+                <p class="location-duration">Champaign, IL, USA | Aug 2023 – Present</p>
                 <p class="description">
-                    In the field of computational genomics, I have designed, managed, and optimized Targeted Assembly Pipelines for the Cyprinidae and Danionidae family of fish. I am also working on a publication on improving alignment accuracy using statistical analysis in R and a novel weighted scoring method to handle evidence of gene duplication and hybridization.
+                    Contributed to a groundbreaking phylogenetic analysis of Cypriniformes, addressing overlooked challenges of 
+                    <em>polyploidy, allopolyploidy, and hybridization</em> through targeted assembly. Optimized phylogenetic pipelines via 
+                    <strong>Nextflow workflow automation, Python-based parallelization, and multi-threading</strong>, reducing runtime by 60%. 
+                    Implemented a novel weighted scoring algorithm that improved alignment accuracy by 94%. Identified 19,000+ unique loci 
+                    using advanced R-based feature filtering and statistical analysis, significantly improving evolutionary insights.
                 </p>
-                <div class="project">
-                    <h5>Project 1: Reconstructing Evolution and the Tree of Life in Fishes</h5>
-                    <p>
-                        The aim of the project was to identify genes targeted for sequencing in a previous experiment on the evolution of Cypriniformes. Starting with the creation of a reference set of genomic information for the Zebrafish (Danio Rerio), I identified over 700 unique gene features to be used as reference sequences for targeted assemblies in 41 species of Cyprinids. Coverage and length analysis using Python's data science libraries was conducted to assess sequences suitable for the reference set.
-                    </p>
-                </div>
-                <div class="project">
-                    <h5>Project 2: Targeted Assembly for Reference Sequences in Cyprinidae using the CAPTUS Pipeline</h5>
-                    <p>
-                        Using the CAPTUS pipeline developed by Dr. Edgardo Mortiz (initially for plant genomic data), I modified it to conduct targeted assembly for a family of fish (Carps and Minnows). This included using workflow automation software like NEXTflow and functional Python scripts to improve the space and time complexity of the pipeline.
-                    </p>
-                    <p>
-                        I used R and its libraries to identify important characteristics and features of Amino acid, Nucleotide, and Clustering alignments to determine useful and unique loci within our results. For analyzing alignment results, IQ-Tree was used to comprehend the genealogy of the family. Parallelization of IQ-Tree processes was done using Python, and the APE (R) package was used for basic unrooted tree visualizations.
-                    </p>
-                    <p>
-                        I developed a novel weighted scoring method to match the best references to their respective genomic regions, implemented post the extraction step using computational scripts with multiple data structures, searching, and sorting algorithms.
-                    </p>
-                </div>
             </div>
 
-            <!-- Course Assistant -->
+            <!-- Industry -->
             <div class="job">
-                <h4>Course Assistant (STAT 420)</h4>
-                <p class="company">Department of Statistics, University of Illinois</p>
-                <p class="location-duration">Champaign, IL, USA | Jan 2025 - Present</p>
+                <h4>Data Science and Project Management Intern</h4>
+                <p class="company">COUNTRY Financial DigitaLab</p>
+                <p class="location-duration">Champaign, IL, USA | May 2025 – Present</p>
                 <p class="description">
-                    Evaluated and graded weekly assignments and midterm exams for over 100 students. Conducted weekly office hours to guide students through course material and homework problems. Collaborated with the instructor, TA, and fellow CAs in weekly meetings to discuss grading strategies and course structure.
+                    Supported enterprise-scale data engineering in the <em>Sales Compensation Agile Release Train</em>. Developed automated pipelines 
+                    using <strong>PySpark, Hive, and Python</strong>, eliminating 140+ hours of manual QA monthly. Improved CI/CD pipelines with automated 
+                    SQL test scenarios and developed a modular data ingestion framework in Python, reducing QA effort by 90%. 
+                </p>
+                <p class="description">
+                    Acted as a Project Manager for a 4-member graduate intern team, leading Agile sprints and stakeholder meetings to build an 
+                    <strong>Agentic AI assistant</strong> for converting legacy HQL scripts to PySpark with automated PyTest case generation.
                 </p>
             </div>
 
-            <!-- IT Intern -->
+            <!-- Hackathon -->
+            <div class="job">
+                <h4>Hackathon Winner (1st Place)</h4>
+                <p class="company">COUNTRY Financial Hackathon 2025</p>
+                <p class="description">
+                    Led a team to develop <strong>GitMyWiki</strong>, an AI-powered RAG pipeline for retrieving internal documentation. 
+                    Built using <strong>Azure AI Search, Azure OpenAI, Python, and Streamlit</strong>. Delivered accurate, summarized answers with links 
+                    to GitLab Wiki and SharePoint files. The solution is being pushed into production at COUNTRY.
+                </p>
+            </div>
+
+            <!-- Non-Profit -->
             <div class="job">
                 <h4>IT Intern</h4>
                 <p class="company">21st Century Dads Foundation</p>
-                <p class="location-duration">Chicago, IL, USA | Jun 2023 - Aug 2023, May 2024 - Aug 2024</p>
+                <p class="location-duration">Chicago, IL, USA | Jun – Aug 2023, May – Aug 2024</p>
                 <p class="description">
-                    As the IT intern for the foundation, I handled database operations with AWS S3 services and MySQL, managing a database of over 2000 foundation members. I identified 15 potential grantmakers using Python's data science libraries based on metrics such as core values, mission, funding targets, and amounts. Through these efforts, I raised $120,000 from a single grantmaker.
-                </p>
-                <p class="description">
-                    I also developed promotional strategies via social media platforms to attract prospective members and strengthen recruitment efforts. I helped raise $75,000 for the 21st Century Dads Foundation and the Illinois Fatherhood Initiative as part of the “Dads Honor Ride” team at the Race Across America event.
+                    Developed and launched a mobile app serving 1,000+ families. Performed grant research and data analysis with Python, 
+                    securing $120,000+ in funding from a single grantmaker. Conducted database management using <strong>AWS S3</strong> and <strong>SQL Server</strong>. 
+                    Supported fundraising initiatives such as <em>RAAM 2023</em>, helping raise over $80,000 for families of children with special needs.
                 </p>
             </div>
+        </section>
+
+        <section class="leadership">
+            <h3>Leadership & Engagement</h3>
+            <p>
+                As Head of Scholarship, Philanthropy, and Recruitment at <strong>Theta Xi Fraternity</strong>, I organized a professional 
+                <em>Speaker Series</em>, improved chapter academic performance (raising GPA from 2.8 to 3.3), and led recruitment efforts. 
+                Globally, I have volunteered with <strong>Habitat for Humanity</strong> and traveled to <strong>40+ countries</strong>, gaining diverse 
+                perspectives that shape my leadership and collaboration.
+            </p>
+        </section>
+
+        <section class="career-goals">
+            <h3>Career Goals</h3>
+            <p>
+                I am actively seeking internships and opportunities in <strong>Data Science, Consulting, Data Engineering, and Management</strong>, 
+                where I can leverage my technical expertise, research background, and leadership experience to create impact.
+            </p>
         </section>
     </main>
     <footer>
